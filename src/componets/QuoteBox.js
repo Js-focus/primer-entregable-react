@@ -18,7 +18,6 @@ const QuoteBox = () => {
     const changeQuoteAndColor = () => {
         setAleatory(getNumberAleatory)
         setColor(randomColor)
-        document.body.style.backgroundColor = "#" + setColor;
     }
 
     return (
