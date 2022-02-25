@@ -1,12 +1,48 @@
-.App {
-  text-align: center;
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.quote-box{
+  max-width: 60vw;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: .1px solid black;
+  box-shadow: 2px 2px 8px 1px;
 
+}
+.button{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+button{
+  background-color: red;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 1px;
+}
+.quote{
+  display: flex;
+  flex-direction: row;
+}
+.quote ~ p{
+  padding-left: 2.5rem;
+  text-align:initial;
+}
+.icon-quote> i{
+  width: 40px;
+  height: 40px;
+
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
